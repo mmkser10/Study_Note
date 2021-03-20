@@ -13,7 +13,7 @@ public class Dijkstra {
         graph[start-1][end-1] = weight;
     }
 
-    public void searchDistance(int start){
+    public void searchDijkstra(int start){
         int[] distance = new int[n];
         boolean[] check = new boolean[n];
 
@@ -59,6 +59,6 @@ public class Dijkstra {
         dijkstra.put(7, 6, 3);
         dijkstra.put(3, 8, 3);
         dijkstra.put(6, 8, 2);
-        dijkstra.searchDistance(1);
+        dijkstra.searchDijkstra(1);
     }
 }
