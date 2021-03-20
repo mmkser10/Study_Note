@@ -41,7 +41,7 @@ public class Dijkstra_PQ{
         }
     }
 
-    public void searchDijkstra_PQ(int start){
+    public void searchDijstra_PQ(int start){
         PriorityQueue<Edge> pq = new PriorityQueue<>();
         boolean[] check = new boolean[n];
         Edge[] distance = new Edge[n];
@@ -83,6 +83,6 @@ public class Dijkstra_PQ{
         dijkstra_pq.put(7, 6, 3);
         dijkstra_pq.put(3, 8, 3);
         dijkstra_pq.put(6, 8, 2);
-        dijkstra_pq.searchDijkstra_PQ(1);
+        dijkstra_pq.searchDijstra_PQ(1);
     }
 }
