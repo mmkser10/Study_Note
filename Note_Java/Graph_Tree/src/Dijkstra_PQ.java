@@ -39,6 +39,12 @@ public class Dijkstra_PQ{
         graph[start-1].add(new Edge(end-1, weight));
     }
 
+
+    public void putDouble(int start, int end, int weight){
+        graph[start-1].add(new Edge(end-1, weight));
+        graph[end-1].add(new Edge(start-1, weight));
+    }
+
     public void searchDijkstra_PQ(int start){
         PriorityQueue<Edge> pq = new PriorityQueue<>();
         boolean[] check = new boolean[n];

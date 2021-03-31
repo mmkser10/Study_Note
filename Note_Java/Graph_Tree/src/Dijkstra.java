@@ -13,6 +13,12 @@ public class Dijkstra {
         graph[start-1][end-1] = weight;
     }
 
+
+    public void putDouble(int start, int end, int weight){
+        graph[start-1][end-1] = weight;
+        graph[end-1][start-1] = weight;
+    }
+
     public void searchDijkstra(int start){
         int[] distance = new int[n];
         boolean[] check = new boolean[n];

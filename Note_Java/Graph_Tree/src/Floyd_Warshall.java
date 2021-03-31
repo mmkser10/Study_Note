@@ -11,6 +11,11 @@ public class Floyd_Warshall {
         graph[start][end] = weight;
     }
 
+    public void putDouble(int start, int end, int weight){
+        graph[start][end] = weight;
+        graph[end][start] = weight;
+    }
+
     public int resultReturn(int start, int end){
         return graph[start][end];
     }
