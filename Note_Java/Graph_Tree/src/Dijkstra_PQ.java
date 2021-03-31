@@ -36,9 +36,7 @@ public class Dijkstra_PQ{
     }
 
     public void put(int start, int end, int weight){
-        for(int x = 0 ; x < n ; x++){
-            graph[start-1].add(new Edge(end-1, weight));
-        }
+        graph[start-1].add(new Edge(end-1, weight));
     }
 
     public void searchDijkstra_PQ(int start){
