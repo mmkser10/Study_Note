@@ -1,8 +1,8 @@
-# Study_Note
+# study-note
 
 java, javascript를 학습하여 기록하는 공간입니다.🌸
 
-## javascript
+## javascript(note-javascript)
 
  - you-don't-know-js-1st : You Don't know JS - 타입과 문법, 스코프와 클로저
 
