@@ -30,4 +30,18 @@ console.log(0.42.toFixed(3));
 console.log(42..toFixed(3));
 console.log(42 .toFixed(3));
 
-console.log(0xf3, 0Xf3, 0363, 0o363, 0O363, 0b11110011, 0B11110011)
+console.log(0xf3, 0Xf3, 0363, 0o363, 0O363, 0b11110011, 0B11110011);
+
+console.log((0.1 + 0.2 === 0.3));
+
+function numberCloseEnoughToEqual(n1, n2){
+	return Math.abs(n1 - n2) < Number.EPSILON;
+}
+let c = 0.1 + 0.2;
+let d = 0.3
+console.log(numberCloseEnoughToEqual(c, d));
+console.log(numberCloseEnoughToEqual(0.0000001, 0.0000002));
+
+// 정수 확인
+console.log('42.000 -> ', Number.isInteger(42.000), ' 42.3 -> ',Number.isInteger(42.3));
+console.log(Number.isSafeInteger(Math.pow(2, 53)), Number.isSafeInteger(Math.pow(2, 53) - 1));
